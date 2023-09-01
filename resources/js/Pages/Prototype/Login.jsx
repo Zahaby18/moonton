@@ -47,11 +47,13 @@ export default function Login(){
                         </div>
                     </div>
                     <div className="grid space-y-[14px] mt-[30px]">
-                        <Button type="button" variant="primary">
-                            <span className="text-base font-semibold">
-                                Start Watching
-                            </span>
-                        </Button>
+                        <Link href={route('prototype.dashboard')}>
+                            <Button type="button" variant="primary">
+                                <span className="text-base font-semibold">
+                                    Start Watching
+                                </span>
+                            </Button>
+                        </Link>
                         {/* <a href="sign_up.html" className="rounded-2xl border border-white py-[13px] text-center">
                             <span className="text-base text-white">
                                 Create New Account
